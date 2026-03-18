@@ -1,30 +1,55 @@
-# 🤖 AI Customer Service Case Study (DM for Orders)
+# 🤖 From “DM for Orders” to AI-Enabled Customer Service
 
-## 📌 Overview
-This project explores how AI can improve customer service for small businesses that rely on "DM for orders" via WhatsApp and social media.
+## 🇿🇦 Real South African Context
+Many small businesses rely on:
+- "DM for orders"
+- WhatsApp communication
+- Social media enquiries
+
+While effective initially, this model becomes difficult to scale as customer demand increases.
+
+---
 
 ## 🚨 Problem
-Small businesses face:
-- Too many repetitive messages
-- Slow response times
-- Missed sales opportunities
+- High volume of repetitive customer messages  
+- Slow response times  
+- Manual typing of similar responses  
+- Missed sales opportunities  
 
-## ⚙️ Solution
-An AI-assisted workflow that:
-- Generates response suggestions
-- Reduces manual typing
-- Improves consistency
+---
 
-## 🔄 Workflow
-Customer Message → AI Suggestion → Review → Send
+## 💡 Solution
+This project explores a simple AI-assisted workflow where:
+
+Customer Message → AI Suggestion → Review → Send  
+
+AI generates response suggestions to improve efficiency and consistency.
+
+---
+
+## 🔄 Example
+**Customer:** Hi, how much is this?  
+
+**AI Suggestion:**  
+"Hi 😊 The price is R250. We currently have stock available and we are based in Johannesburg. Let me know if you'd like to place an order."
+
+---
 
 ## 📊 Impact
-- Faster responses
-- Better customer experience
-- Reduced workload
+- Faster response times  
+- Reduced manual workload  
+- Improved consistency  
+- Better customer experience  
+
+---
 
 ## 🧠 Skills Demonstrated
-- AI Enablement
-- Process Improvement
-- Prompt Engineering
-- Workflow Design
+- AI Enablement  
+- Process Improvement  
+- Prompt Engineering  
+- Workflow Design  
+
+---
+
+## 🌐 Live Demo
+👉 https://YOUR-USERNAME.github.io/ai-dm-customer-service-case-study/
