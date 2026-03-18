@@ -7,6 +7,59 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CUSTOM STYLES -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h3 {
+      margin-top: 40px;
+      font-weight: 600;
+    }
+
+    .section-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .section-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .chat-bubble-user {
+      background-color: #dcf8c6;
+      padding: 10px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .chat-bubble-ai {
+      background-color: #ffffff;
+      padding: 10px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      border: 1px solid #ddd;
+      min-height: 40px;
+    }
+
+    .typing {
+      font-style: italic;
+      color: gray;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -18,175 +71,132 @@
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <div class="bg-dark text-white py-5">
   <div class="container text-center">
-    <h1 class="display-5 fw-bold">
-      From “DM for Orders” to AI-Enabled Customer Service
+    <h1 class="display-4 fw-bold">
+      AI for Everyday Hustle 🇿🇦
     </h1>
     <p class="lead">
-      Turning everyday South African business challenges into AI-powered solutions
+      Turning "DM for Orders" into a scalable AI-powered customer experience
     </p>
   </div>
 </div>
 
-<!-- MAIN CONTENT -->
+<!-- CONTENT -->
 <div class="container py-5">
 
-  <!-- OVERVIEW -->
-  <h3>🧠 Overview</h3>
-  <p>
-    In many South African small businesses, customer engagement often starts with a simple phrase:
-    <strong>“DM for orders”</strong>.
-  </p>
+  <div class="section-card">
+    <h3>🧠 Overview</h3>
+    <p>Small businesses often rely on "DM for orders". As demand grows, managing messages manually becomes inefficient.</p>
+  </div>
 
-  <p>
-    While this model works, it becomes difficult to manage as demand grows. This project explores
-    how AI can be introduced to improve response time, consistency, and overall customer experience.
-  </p>
+  <div class="section-card">
+    <h3>🏪 Real-World Scenario</h3>
+    <ul>
+      <li>"Hi, how much is this?"</li>
+      <li>"Do you have stock?"</li>
+      <li>"Where are you located?"</li>
+    </ul>
+  </div>
 
-  <!-- REAL WORLD SCENARIO -->
-  <h3 class="mt-4">🏪 Real-World Scenario</h3>
-  <p>
-    Imagine a small business owner selling clothes, food, or products via Instagram or WhatsApp.
-    Every day they receive messages like:
-  </p>
+  <div class="section-card">
+    <h3>🚨 Problem</h3>
+    <ul>
+      <li>Slow responses</li>
+      <li>Repetitive typing</li>
+      <li>Missed sales</li>
+    </ul>
+  </div>
 
-  <ul>
-    <li>"Hi, how much is this?"</li>
-    <li>"Do you have stock?"</li>
-    <li>"Where are you located?"</li>
-  </ul>
+  <div class="section-card">
+    <h3>⚙️ Solution</h3>
+    <p>AI generates responses → human reviews → faster replies.</p>
+  </div>
 
-  <p>
-    As the business grows, responding manually to every message becomes time-consuming,
-    leading to slow replies and lost sales opportunities.
-  </p>
+  <div class="section-card">
+    <h3>🔄 Workflow</h3>
+    <div class="row text-center">
+      <div class="col-md-3"><div class="p-3 border rounded">📩<br>Message</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">🤖<br>AI</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">👀<br>Review</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">✅<br>Send</div></div>
+    </div>
+  </div>
 
-  <!-- PROBLEM -->
-  <h3>🚨 Problem</h3>
-  <ul>
-    <li>High volume of repetitive customer messages</li>
-    <li>Slow response times during busy periods</li>
-    <li>Manual typing of the same responses</li>
-    <li>Missed sales due to delayed replies</li>
-  </ul>
+  <!-- CHAT WITH TYPING -->
+  <div class="section-card">
+    <h3>💬 Live AI Interaction</h3>
 
-  <!-- BEFORE VS AFTER -->
-  <h3 class="mt-4">⚖️ Before vs After</h3>
-  <div class="row">
-    
-    <div class="col-md-6">
-      <div class="card border-danger mb-3">
-        <div class="card-body">
-          <h5 class="text-danger">Before (Manual)</h5>
-          <ul>
-            <li>Typing same replies repeatedly</li>
-            <li>Slow responses</li>
-            <li>Missed messages</li>
-            <li>Inconsistent communication</li>
-          </ul>
+    <div class="p-3 bg-light rounded">
+
+      <div class="text-end">
+        <div class="chat-bubble-user">
+          Hi, how much is this?
         </div>
       </div>
-    </div>
 
-    <div class="col-md-6">
-      <div class="card border-success mb-3">
-        <div class="card-body">
-          <h5 class="text-success">After (AI-Assisted)</h5>
-          <ul>
-            <li>AI-generated replies</li>
-            <li>Faster response times</li>
-            <li>Consistent messaging</li>
-            <li>Improved customer experience</li>
-          </ul>
-        </div>
+      <div class="text-start mt-2">
+        <div id="aiReply" class="chat-bubble-ai"></div>
+        <div id="typing" class="typing">AI is typing...</div>
       </div>
+
     </div>
-
   </div>
 
-  <!-- SOLUTION -->
-  <h3>⚙️ Solution</h3>
-  <p>
-    I designed a simple AI-assisted workflow where AI generates suggested replies to customer
-    enquiries, allowing the business owner to review and send responses quickly.
-  </p>
-
-  <!-- WORKFLOW -->
-  <h3>🔄 Workflow</h3>
-  <div class="bg-light p-3 rounded">
-    Customer Message<br>
-    ↓<br>
-    AI Generates Reply<br>
-    ↓<br>
-    Owner Reviews<br>
-    ↓<br>
-    Send to Customer
+  <div class="section-card">
+    <h3>📊 Impact</h3>
+    <ul>
+      <li>Up to 50% faster responses</li>
+      <li>Better customer experience</li>
+    </ul>
   </div>
 
-  <!-- TOOLS -->
-  <h3 class="mt-4">🛠️ Tools & Approach</h3>
-  <ul>
-    <li>Generative AI tools (e.g. ChatGPT / Copilot)</li>
-    <li>Prompt engineering for consistent responses</li>
-    <li>Structured response templates</li>
-    <li>Human-in-the-loop workflow design</li>
-  </ul>
-
-  <!-- EXAMPLE -->
-  <h3 class="mt-4">💬 Example Interaction</h3>
-  <div class="card p-3 bg-light">
-
-    <p><strong>Customer:</strong> Hi, how much is this?</p>
-
-    <div class="bg-white p-3 rounded shadow-sm">
-      <strong>AI Suggested Reply:</strong><br><br>
-      Hi 😊 The price is R250. We currently have stock available and we are based in Johannesburg.
-      Let me know if you'd like to place an order.
-    </div>
-
+  <div class="section-card">
+    <h3>🙋 My Role</h3>
+    <ul>
+      <li>Designed workflow</li>
+      <li>Applied AI thinking</li>
+    </ul>
   </div>
 
-  <!-- IMPACT -->
-  <h3 class="mt-4">📊 Impact</h3>
-  <ul>
-    <li>Reduced response time by up to 50%</li>
-    <li>Improved response consistency</li>
-    <li>Reduced manual effort for business owners</li>
-    <li>Increased potential to convert enquiries into sales</li>
-  </ul>
-
-  <!-- YOUR ROLE -->
-  <h3 class="mt-4">🙋 My Role & Contribution</h3>
-  <ul>
-    <li>Identified a real-world business problem common in South Africa</li>
-    <li>Designed an AI-assisted workflow to improve efficiency</li>
-    <li>Applied prompt engineering to generate consistent responses</li>
-    <li>Translated a simple idea into a scalable business solution</li>
-  </ul>
-
-  <!-- SKILLS -->
-  <h3>🧠 Skills Demonstrated</h3>
-  <ul>
-    <li>AI Enablement & Adoption</li>
-    <li>Process Improvement</li>
-    <li>Prompt Engineering</li>
-    <li>Workflow Optimisation</li>
-  </ul>
-
-  <!-- BUTTONS -->
-  <div class="mt-4">
-    <a href="https://moshemaleka.github.io/moshe-portfolio/" class="btn btn-dark me-2">
-      Back to Portfolio
-    </a>
-
-    <a href="https://github.com/MosheMaleka/ai-dm-customer-service-case-study" target="_blank" class="btn btn-outline-dark">
-      View on GitHub
-    </a>
+  <div class="text-center mt-4">
+    <a href="https://moshemaleka.github.io/moshe-portfolio/" class="btn btn-dark">Back to Portfolio</a>
   </div>
 
 </div>
+
+<!-- JS -->
+<script>
+  // FADE-IN ON SCROLL
+  const cards = document.querySelectorAll('.section-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  cards.forEach(card => observer.observe(card));
+
+  // TYPING EFFECT
+  const text = "Hi 😊 The price is R250. We have stock available in Johannesburg. Let me know if you'd like to order.";
+  let i = 0;
+
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("aiReply").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 30);
+    } else {
+      document.getElementById("typing").style.display = "none";
+    }
+  }
+
+  setTimeout(typeEffect, 1000);
+</script>
 
 </body>
 </html>
