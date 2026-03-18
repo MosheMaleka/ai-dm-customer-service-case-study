@@ -52,4 +52,4 @@ AI generates response suggestions to improve efficiency and consistency.
 ---
 
 ## 🌐 Live Demo
-👉 https://YOUR-USERNAME.github.io/ai-dm-customer-service-case-study/
+👉 https://MosheMaleka.github.io/ai-dm-customer-service-case-study/
