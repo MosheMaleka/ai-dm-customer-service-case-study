@@ -1,56 +1,97 @@
-# 🤖 AI Customer Service Automation  
-### From “DM for Orders” to a Scalable AI Workflow
-> A practical AI solution for automating WhatsApp-based customer service in small businesses.
+# 🤖 AI Customer Service Automation
+
+### From “DM for Orders” → Scalable AI Workflow
+
+> Turning everyday WhatsApp conversations into a structured, AI-assisted customer service system.
+
 ![AI Customer Service Demo](assets/hero.png)
 
 ---
 
-## 🇿🇦 Real South African Context
+## 🇿🇦 Real-World Context (South Africa)
 
 Many small businesses operate using:
-- “DM for orders”
-- WhatsApp communication
-- Social media enquiries  
 
-While effective initially, this model becomes difficult to scale as demand grows — especially when handling high volumes of daily messages.
+- “DM for orders”
+- WhatsApp as the primary sales channel
+- Social media enquiries
+
+This works initially…
+
+But as demand grows, it becomes difficult to scale efficiently.
 
 ---
 
-## 🚨 Problem
+## 🚨 The Problem
 
-At ~300 messages per day, businesses face:
+At ~300+ messages per day, businesses experience:
 
 - Repetitive customer queries  
 - Slow response times  
-- Manual typing of similar responses  
+- Manual typing / copy-pasting  
 - Missed sales opportunities  
 
+Typical messages:
+- “Price?”
+- “Do you have stock?”
+- “Where are you located?”
+
 ---
 
-## 💡 Solution
+## 💡 The Solution
 
-This project demonstrates a practical **AI-assisted customer service workflow**:
+A simple but powerful workflow:
 
-```
 Customer Message → AI Suggestion → Human Review → Send
-```
 
+Instead of replying manually every time:
 
-AI is used to generate response suggestions, enabling:
-
-- Faster replies  
-- Consistent messaging  
-- Reduced manual effort  
+- AI generates a response  
+- Human reviews or edits  
+- Message is sent instantly  
 
 ---
 
-## 🔄 Example Interaction
+## 🔄 Workflow
+
+1. Customer sends a message via WhatsApp  
+2. Message is captured via automation (API / webhook)  
+3. AI generates a response suggestion  
+4. Human reviews (if needed)  
+5. Response is sent back to the customer  
+
+---
+
+## 🧠 Prompt Design (Core Logic)
+
+The system is driven by structured prompting:
+
+You are a helpful customer service assistant for a hoodie business in Johannesburg.
+
+Rules:
+- Be friendly and professional
+- Keep responses short
+- Include price when asked
+- Mention location (Johannesburg)
+- Mention delivery options
+- Encourage the customer to order
+
+This ensures:
+
+- Consistent tone  
+- Accurate information  
+- Faster responses  
+
+---
+
+## 💬 Example Interaction
 
 **Customer:**  
 Hi, how much is this?
 
 **AI Suggestion:**  
-> Hi 😊 The price is R250. We currently have stock available and we are based in Johannesburg. Let me know if you'd like to place an order.
+
+> Hi 😊 The hoodie is R350. We have stock available and we are based in Johannesburg. We also deliver nationwide 🚚. Let me know if you'd like to order.
 
 ---
 
@@ -58,75 +99,88 @@ Hi, how much is this?
 
 ![System Architecture](assets/architecture.png)
 
----
-
-## ⚙️ How It Works (Implementation Overview)
-
-1. Customer sends message via WhatsApp  
-2. Message is captured via automation tool (e.g. webhook / API)  
-3. AI processes the message and generates a response  
-4. Response is reviewed (human-in-the-loop)  
-5. Approved message is sent back to the customer  
-
----
-
-### 🛠️ Tools That Can Be Used
-
-- WhatsApp Business API / Twilio  
-- OpenAI API (for response generation)  
-- Automation tools (e.g. Make, Zapier)  
-- Database (for storing conversations)
+Flow:  
+Customer → WhatsApp → Automation → AI Engine → Decision → Response → Storage  
 
 ---
 
 ## 📊 Impact
 
-- ⚡ Faster response times  
-- 🔁 Reduced manual workload  
-- 🎯 Improved consistency  
-- 💬 Better customer experience  
+Before:
+
+- ❌ Repeating the same answers multiple times  
+- ❌ Slow response times  
+- ❌ Missed enquiries  
+
+After:
+
+- ✅ Faster responses  
+- ✅ Consistent messaging  
+- ✅ Reduced manual workload  
+- ✅ Improved customer experience  
+
+---
+
+## 📈 Performance (Illustrative)
+
+- ~300+ messages handled per day  
+- ~80% of queries can be AI-assisted  
+- ⚡ Near-instant response time  
+- 📊 Improved conversion potential  
+
+*Note: Metrics are illustrative and based on a typical high-volume small business scenario.*
+
+---
+
+## 🛠️ Tools & Stack
+
+- WhatsApp Business API / Twilio  
+- OpenAI API (response generation)  
+- Automation tools (Make / Zapier)  
+- Database (conversation storage)  
 
 ---
 
 ## 💼 Business Value
 
-This solution enables small businesses to:
+This solution enables businesses to:
 
 - Scale customer interactions without increasing staff  
-- Respond instantly to customer enquiries  
-- Improve conversion rates from social media traffic  
+- Respond instantly to enquiries  
+- Improve conversion rates  
 - Maintain consistent communication  
 
 ---
 
 ## 🧠 Skills Demonstrated
 
+- Business Analysis  
 - AI Enablement  
-- Workflow Design  
 - Prompt Engineering  
+- Workflow Design  
 - Process Improvement  
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Enhancements
 
 - Full automation (no human review for simple queries)  
-- Integration with payment systems  
+- Payment integration  
 - Order tracking automation  
-- Customer data analytics dashboard  
+- Analytics dashboard for performance insights  
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Case Study
 
-👉 https://moshemaleka.github.io/ai-dm-customer-service-case-study/
+👉 https://moshemaleka.github.io/moshe-portfolio/dm-ai-case-study.html  
 
 ---
 
 ## 👨‍💻 Author
 
-Built by Moshe Maleka  
+Moshe Maleka  
 
-This project reflects my interest in applying AI to solve real-world business problems in practical and scalable ways.
+Business Analyst building practical AI solutions that improve real-world workflows, efficiency, and customer experience.
 
 ---
